@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle,rgba(2, 0, 36, 0.83) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    margin: 0;
+}
+
+.calculator {
+    border:2px solid white;
+    background-color: #020202;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 370px;
+    text-align: center;
+}
+
+.calculator:hover{
+    transform: scale(1.01);
+}
+
+.display {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 70px;
+    font-size: 2.5em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #55a7cc;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgb(196, 17, 17);
+}
+
+.display:hover{
+    cursor: text;
+    color: white;
+    background-color: rgb(20, 20, 116);
+    transform: scale(1.05);
+}
+
+.buttons {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #4a4a4a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    color:#000000;
+    background-color: #8c8b8b;
+    transform: scale(1.03);
+}
+
+.equ{
+    padding-inline: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4a4a4a;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.equ:hover{
+    color:#000000;
+    background-color: #8c8b8b;
+    transform: scale(1.03);
+}
+
+button:active {
+    background-color: #777;
+    transform: scale(0.95);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.operator {
+    background-color: #f27c8e;
+}
+
+.operator:hover {
+    background-color: #f15a75;
+}
+
+.clear, .delete {
+    color: darkblue;
+    background-color: #ff9900;
+}
+
+.clear:hover, .delete:hover {
+    background-color: #ff8c00b7;
+}
