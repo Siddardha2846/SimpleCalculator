@@ -1,2 +1,25 @@
-# Auto detect text files and perform LF normalization
+# Normalize line endings for all text files
 * text=auto
+
+# Treat HTML, CSS, and JS files as text
+*.html text
+*.css text
+*.js text
+
+# Ignore minified files from linguist stats
+*.min.js linguist-vendored
+*.min.css linguist-vendored
+
+# Force LF line endings (optional)
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Prevent binary detection for images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+
+# Exclude specific files from GitHub's language stats
+README.md linguist-documentation
